@@ -47,6 +47,7 @@
   "terminal.integrated.defaultProfile.windows": "Git Bash"
 }
 ```
+- [emmet.triggerExpansionOnTab](https://code.visualstudio.com/docs/editor/emmet)
 
 <br/>
 
@@ -85,7 +86,7 @@
 }
 ```
 
-[Custom Snippet Generator](https://snippet-generator.app/)
+- [Custom Snippet Generator](https://snippet-generator.app)
 
 <br/>
 
