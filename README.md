@@ -16,6 +16,10 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[liquid]": {
+    "editor.defaultFormatter": "Shopify.theme-check-vscode",
+    "editor.formatOnSave": true
+  },
 
   // A Minimap (code outline) gives a high-level overview of source code //
   "editor.minimap.enabled": false,
@@ -44,7 +48,29 @@
 
   "files.autoSave": "onWindowChange",
   "workbench.iconTheme": "material-icon-theme",
-  "terminal.integrated.defaultProfile.windows": "Git Bash"
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // Copilot বন্ধ রাখার জন্য
+  "editor.inlineSuggest.enabled": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "javascript": false
+  },
+  "code-runner.runInTerminal": true,
+
+  //Tailwind css support
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "liquid": "html",
+    "javascript": "javascript",
+    "css": "css"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  }
 }
 ```
 - [emmet.triggerExpansionOnTab](https://code.visualstudio.com/docs/editor/emmet)
@@ -112,3 +138,4 @@
 16. [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
 17. [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 18. [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+19. [Shopify Liquid](https://marketplace.visualstudio.com/items?itemName=Shopify.theme-check-vscode)
