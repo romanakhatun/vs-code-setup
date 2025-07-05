@@ -17,8 +17,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[liquid]": {
-    "editor.defaultFormatter": "Shopify.theme-check-vscode",
-    "editor.formatOnSave": true
+    "editor.defaultFormatter": "Shopify.theme-check-vscode"
   },
 
   // A Minimap (code outline) gives a high-level overview of source code //
