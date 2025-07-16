@@ -6,51 +6,67 @@
 
 ```
 {
-  //Lines will wrap at viewport width //
+  // Viewport width অনুযায়ী লাইন ব্রেক হবে
   "editor.wordWrap": "on",
 
-  // VSCode will automatically run the formatter whenever you save a file //
+  // ফাইল সেভ করলেই অটো ফরম্যাট হবে
   "editor.formatOnSave": true,
+
+  // Default formatter হিসেবে Prettier ব্যবহার করবে
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // শুধুমাত্র React JS (JSX/TSX) ফাইলের জন্য Prettier ফরম্যাটার
   "[javascriptreact]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
+  // Liquid ফাইলের জন্য Shopify এর formatter
   "[liquid]": {
     "editor.defaultFormatter": "Shopify.theme-check-vscode"
   },
 
-  // A Minimap (code outline) gives a high-level overview of source code //
+  // Minimap বন্ধ রাখা হয়েছে (কোডের সাইড প্যানেল)
   "editor.minimap.enabled": false,
 
-  //Allows matching brackets to be identified with colours //
+  // Bracket গুলোর কালার হাইলাইট ও গাইড লাইন চালু
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
 
+  // ফন্ট সাইজ
   "editor.fontSize": 15,
 
-  // Fix all linting errors on save //
+  // Lint error সেভের সময় ঠিক করে দিবে
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.tslint": true
   },
 
-  // Enable expanding Emmet abbreviations with Tab key.
+  // Emmet এর Tab shortcut চালু
   "emmet.triggerExpansionOnTab": true,
+
+  // Emmet কে JSX ফাইলে কাজ করার অনুমতি
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
 
-  //Always update path automatically//
+  // ফাইল move করলে import গুলো auto update হবে
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
 
+  // ফোকাস হারালেই ফাইল সেভ হবে
   "files.autoSave": "onWindowChange",
+
+  // Material icon theme ব্যবহার করা হচ্ছে
   "workbench.iconTheme": "material-icon-theme",
+
+  // Default terminal হিসেবে Git Bash ব্যবহার
   "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  // Untrusted ফাইল সরাসরি open করবে, warning দিবে না
   "security.workspace.trust.untrustedFiles": "open",
 
-  // Copilot বন্ধ রাখার জন্য
+  // GitHub Copilot Suggestion বন্ধ রাখা হয়েছে
   "editor.inlineSuggest.enabled": false,
   "github.copilot.enable": {
     "*": false,
@@ -58,15 +74,19 @@
     "markdown": false,
     "javascript": false
   },
+
+  // Code Runner extension টারমিনালে রান করবে (আলাদা output panel নয়)
   "code-runner.runInTerminal": true,
 
-  //Tailwind css support
+  // Tailwind CSS support বিভিন্ন ফাইলে যুক্ত করা হয়েছে
   "tailwindCSS.includeLanguages": {
     "html": "html",
     "liquid": "html",
     "javascript": "javascript",
     "css": "css"
   },
+
+  // String এর মধ্যে suggestion চালু রাখা হয়েছে
   "editor.quickSuggestions": {
     "strings": true
   }
